@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-box {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-image: linear-gradient(to bottom, #6743ff, #5c3dfa, #5037f5, #4232f0, #312ceb);
+  width: 430px;
+  height: 600px;
+  border-radius: 40px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.circle {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-image: linear-gradient(to bottom, #4d21cc, #4c26d5, #4320e2, #492fe7, #4734f0);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.details-bottom {
+  padding-bottom: 50px;
+}
+
+.left-box p {
+  color: #ccc7ff;
+  font-size: 1.2rem;
+}
+
+.string-1 {
+  color: #ccc7ff;
+}
+
+.string-2 {
+  color: #fffffd;
+  font-size: 90px;
+  margin-top: -45px;
+}
+
+.string-3 {
+  color: #fffffd;
+  padding-bottom: 10px;
+}
+
+.string-4 {
+  color: #282e46;
+  padding-right: 250px;
+  margin-top: 10px;
+}
+
+.right-box {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 13px 7px 44px 0px rgba(46, 44, 177, 0.1);
+  width: 500px;
+  height: 600px;
+  margin-right: 50px;
+  border-radius: 40px;
+  margin-left: -40px;
+  padding-left: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.right-box-1 {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: #fff6f5;
+  color: #eb5b64;
+  border-radius: 10px;
+  width: 350px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-left: -280px;
+  text-align: center;
+
+}
+
+.right-box-2 {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: #fffbf2;
+  color: #ffbf4e;
+  border-radius: 10px;
+  width: 350px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-left: -280px;
+  text-align: center;
+}
+
+.right-box-3 {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: #f2fbfa;
+  color: #29ab89;
+  border-radius: 10px;
+  width: 350px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-left: -280px;
+  text-align: center;
+}
+
+.right-box-4 {
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: #f3f3fd;
+  color: #2023a8;
+  border-radius: 10px;
+  width: 350px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding-left: -280px;
+  text-align: center;
+}
+
+.right-box span {
+  color: #9199a4;
+  padding-left: 150px;
+}
+
+a {
+  position: relative;
+  border: 0px solid hsl(0, 0%, 100%);
+  background-color: #282e46;
+  border-radius: 40px;
+  height: 65px;
+  width: 350px;
+  margin-left: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 50px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  transition: all 1.5s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-box, .right-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .right-box {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .string-4 {
+    padding-right: 0;
+    margin-top: 30px;
+  }
+}
+
+/* For screens between 600px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    height: auto;
+  }
+  
+  .left-box, .right-box {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .right-box {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .string-4 {
+    padding-right: 0;
+    margin-top: 10px;
+  }
+}
